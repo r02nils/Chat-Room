@@ -52,6 +52,6 @@ function getRoom($dir) {
         file_put_contents("$dir/$new" . ".log", "");
         $ffs = array_merge([ $new ], $ffs);
     }
-    return json_encode($ffs);    
+    return json_decode($ffs);    
 }
 ?>
